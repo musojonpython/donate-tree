@@ -1,0 +1,219 @@
+{% extends 'base.html'%}
+{% load static %}
+{% block content %}
+    <div class="container">
+      <div>
+        <h1>Toshkent viloyatining yashil hududlari.</h1>
+      </div>
+        <table class="table table-hover table-dark" id="region-table" style="width:90%">
+          <thead>
+            <tr>
+              <th scope="col">Toshkent Tumanlari</th>
+              <th scope="col">Maydoni mavjud joylar</th>
+              <th scope="col">Bo'sh maydoni(gektarlarda)</th>
+            </tr>
+          </thead>
+                <tr>
+                  <th rowspan="2">Angren Tumani</th>
+                  <td > <a class="td-items" href="{% url 'tree-list'%}">"Gulzor" MFY Shimoliy bog'i</a> </td>
+                  <td> 21.4</td>
+                </tr>
+                <tr>
+                  <td > <a class="td-items" href="{% url 'tree-list'%}">"Istiqbol" MFY Yoshlar bog'i</a> </td>
+                  <td> 19.8</td>
+                </tr>
+                <tr>
+                    <th rowspan="2">Bekobod shahri</th>
+                    <td ><a class="td-items" href="{% url 'tree-list'%}">14-daha "Paxtakor" MFY</a> </td>
+                    <td> 1</td>
+                  </tr>
+                  <tr>
+                    <td > <a class="td-items" href="{% url 'tree-list'%}"> 12-daha "Samarqand" MFY Turon ko'chasi</a></td>
+                    <td> 1</td>
+                  </tr>
+                  <tr>
+                    <th rowspan="2">Nurafshon shahri</th>
+                    <td > <a class="td-items" href="{% url 'tree-list'%}">"Oybek" MFY</a> </td>
+                    <td> 3</td>
+                  </tr>
+                  <tr>
+                    <td ><a class="td-items" href="{% url 'tree-list'%}">"Yangi obod" MFY</a> </td>
+                    <td> 4</td>
+                  </tr>
+                  <tr>
+                    <th rowspan="3">Olmaliq shahri</th>
+                    <td ><a class="td-items" href="{% url 'tree-list'%}">"Namuna" MFY Ehtirom ko'chasi</a> </td>
+                    <td> 1</td>
+                  </tr>
+                  <tr>
+                    <td ><a class="td-items" href="{% url 'tree-list'%}"> "Metallurg" MFY Metallurglar ko'chasi</a></td>
+                    <td> 1</td>
+                  </tr>
+                  <tr>
+                    <td > <a class="td-items" href="{% url 'tree-list'%}">“Toshkent” MFY M. Ulug‘bek ko‘chasi</a> </td>
+                    <td> 1.2</td>
+                  </tr>
+                  <tr>
+                    <th rowspan="2">Ohangaron shahri</th>
+                    <td ><a class="td-items" href="treeList.html">"Namuna" MFY Oxunboboyev ko'chasi</a> </td>
+                    <td> 1</td>
+                  </tr>
+                  <tr>
+                    <td ><a class="td-items"  href="treeList.html">"Baxt" MFY A.Navoiy ko'chasi</a></td>
+                    <td> 1</td>
+                  </tr>
+                  <tr>
+                    <th rowspan="2">Chirchiq shahri</th>
+                    <td >“Tinchlik” MFY</td>
+                    <td> 1</td>
+                  </tr>
+                  <tr>
+                    <td >"Quyosh" MFY</td>
+                    <td> 1</td>
+                  </tr>
+                  <tr>
+                    <th rowspan="2">Yangiyo'l shahri</th>
+                    <td >“Farovon” MFY Anarkulov dahasi</td>
+                    <td> 1</td>
+                  </tr>
+                  <tr>
+                    <td>"Yangi bog'" va "Mezon" MFY</td>
+                    <td> 4.7</td>
+                  </tr>
+                  <tr>
+                    <th rowspan="2">Bekobod tumani</th>
+                    <td>“Istiqbol” MFY Toshkent ko'chasi</td>
+                    <td> 1</td>
+                  </tr>
+                  <tr>
+                    <td>"Guliston" MFY Toshkent ko'chasi</td>
+                    <td> 2</td>
+                  </tr>
+                  <tr>
+                    <th rowspan="4">Bo'ka tumani</th>
+                    <td>“Markaziy qo'rg'on” ko'chasi</td>
+                    <td> 3</td>
+                  </tr>
+                  <tr>
+                    <td>"A.Qodiriy" ko'chasi</td>
+                    <td> 1</td>
+                  </tr>
+                  <tr>
+                    <td>"Guliston" ko'chasi</td>
+                    <td> 5</td>
+                  </tr>
+                  <tr>
+                    <td>"Markaziy" ko'chasi</td>
+                    <td> 1</td>
+                  </tr>
+                  <tr>
+                    <th rowspan="2">Bo'stonliq tumani</th>
+                    <td>“Navro'z” MFY</td>
+                    <td> 1</td>
+                  </tr>
+                  <tr>
+                    <td>"Dumaloq" MFY</td>
+                    <td> 1</td>
+                  </tr>
+                  <tr>
+                    <th rowspan="3">Zangiota tumani</th>
+                    <td>“Achchiqsoy” MFY</td>
+                    <td> 1</td>
+                  </tr>
+                  <tr>
+                    <td>"Tariq teshar" MFY</td>
+                    <td> 1.3</td>
+                  </tr>
+                  <tr>
+                    <td>"Savohat" MFY</td>
+                    <td> 1.4</td>
+                  </tr>
+                  <tr>
+                    <th rowspan="1">Qibray tumani</th>
+                    <td>Toshkent ko'chasi</td>
+                    <td> 1</td>
+                  </tr>
+                  <tr>
+                    <th rowspan="2">Quyichichiq tumani</th>
+                    <td>“Sergeli” MFY</td>
+                    <td> 1.4</td>
+                  </tr>
+                  <tr>
+                    <td>"Chinor" MFY Xayraobod ko'chasi</td>
+                    <td> 1</td>
+                  </tr>
+                  <tr>
+                    <th rowspan="2">Oqqo'rg'on tumani</th>
+                    <td>“Birlik” MFY Oxunboboyev ko'chasi</td>
+                    <td> 1.3</td>
+                  </tr>
+                  <tr>
+                    <td>“Birlik” MFY Oybek ko‘chasi</td>
+                    <td> 2.2</td>
+                  </tr>
+                  <tr>
+                    <th rowspan="1">Ohangaron tumani</th>
+                    <td>“Nurobod” qorg'oni</td>
+                    <td> 3</td>
+                  </tr>
+                  <tr>
+                    <th rowspan="2">Parkent tumani</th>
+                    <td>“Objuvoz” MFY Yoshlar bog'i</td>
+                    <td> 1.3</td>
+                  </tr>
+                  <tr>
+                    <td>“Xo'ja” MFY Meros ko‘chasi</td>
+                    <td> 1</td>
+                  </tr>
+                  <tr>
+                    <th rowspan="2">Piskent tumani</th>
+                    <td>“G'ayrat” MFY</td>
+                    <td> 2</td>
+                  </tr>
+                  <tr>
+                    <td>“Yangiobod” MFY </td>
+                    <td> 2</td>
+                  </tr>
+                  <tr>
+                    <th rowspan="2"> Toshkent tumani</th>
+                    <td>“Kensoy” MFY</td>
+                    <td> 1</td>
+                  </tr>
+                  <tr>
+                    <td>“Oqtosh” MFY </td>
+                    <td> 1</td>
+                  </tr>
+                  <tr>
+                    <th rowspan="2"> O'rtachirchiq tumani</th>
+                    <td>“Uyg'ur” MFY Yoshlik ko'chasi</td>
+                    <td> 1</td>
+                  </tr>
+                  <tr>
+                    <td>“Oltio'g'il” MFY Toshkent dengizi ko'chasi</td>
+                    <td> 2</td>
+                  </tr>
+                  <tr>
+                    <th rowspan="1"> Chinoz tumani</th>
+                    <td>T.Oxunova ko'chasi</td>
+                    <td> 1</td>
+                  </tr>
+                  <tr>
+                    <th rowspan="2"> Yuqori Chirchiq tumani</th>
+                    <td>“Ittifoq” MFY</td>
+                    <td> 1.2</td>
+                  </tr>
+                  <tr>
+                    <td>“Ma'rifat” MFY</td>
+                    <td> 3.1</td>
+                  </tr>
+                  <tr>
+                    <th rowspan="1"> Yangiyo'l tumani</th>
+                    <td>A.Shermatov ko'chasi</td>
+                    <td>2</td>
+                  </tr>
+            </table>
+          
+                    
+    </div>
+
+{% endblock content %}

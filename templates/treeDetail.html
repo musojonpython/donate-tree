@@ -1,0 +1,287 @@
+{% extends 'base.html'%}
+{% load static %}
+{% block content %}
+         
+         <!--Header End--> 
+         <!--Inner Header Start-->
+         <section class="wf100 p100 inner-header-tosh">
+            <div class="container">
+               <h1>Toshkent shahri uchun ekilishi mumkin bo'lgan daraxtlar ro'yxati</h1>
+            </div>
+         </section>
+         <!--Inner Header End--> 
+         <!--Blog Start-->
+         <section class="wf100 p80 shop">
+            <div class="product-details">
+               <div class="container">
+                  <h2 class="text-primary" style="text-align: center; ">Daraxt haqida to'liq malumot</h2>
+                  <div class="row">
+                     <div class="col-md-4">
+                        <section class="gallery">
+                           <div class="gallery__item">
+                             <input type="radio" id="img-1" checked name="gallery" class="gallery__selector"/>
+                             <img class="gallery__img" src="{{tree.image.url}}" alt=""/>
+                             <label for="img-1" class="gallery__thumb"><img src="{{tree.image.url}}" alt=""/></label>
+                           </div>
+                           <div class="gallery__item">
+                             <input type="radio" id="img-2" name="gallery" class="gallery__selector"/>
+                             <img class="gallery__img" src="{{tree.image1.url}}" alt=""/>
+                             <label for="img-2" class="gallery__thumb"><img src="{{tree.image1.url}}" alt=""/></label>
+                           </div>
+                           <div class="gallery__item">
+                             <input type="radio" id="img-3" name="gallery" class="gallery__selector"/>
+                             <img class="gallery__img" src="{{tree.image2.url}}" alt=""/>
+                             <label for="img-3" class="gallery__thumb"><img src="{{tree.image2.url}}" alt=""/></label>
+                           </div>
+                           <div class="gallery__item">
+                             <input type="radio" id="img-4" name="gallery" class="gallery__selector"/>
+                             <img class="gallery__img" src="{{tree.image3.url}}" alt=""/>
+                             <label for="img-4" class="gallery__thumb"><img src="{{tree.image3.url}}" alt=""/></label>
+                           </div>
+                         </section>
+                     </div>
+                     <div class="col-md-5">
+                        <div class="product-text">
+                           <h4>{{tree.name}}</h4> <i>{{tree.nameLotin}} </i>
+                           <div class="pro-pricing"> <span id="price-cost">{{tree.cost}}</span> so'm </div>
+                           <p>{{tree.bio}}
+                           </p>
+                              <div class="form-group col-md-6" style="display: inline-block;">
+                                 <h5>Daraxtlar soni:</h5> <input type="number" style="width: 100px;"/>
+                              </div>
+                              <form>
+                                 <h6>Necha yil qarash:</h6>
+                                 <div class="form-check form-check-inline">
+                                    <label class="form-check-label" for="inlineRadio1">1</label>
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1" checked>
+                                  </div>
+                                  <div class="form-check form-check-inline">
+                                    <label class="form-check-label" for="inlineRadio2">2</label>
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                                  </div>
+                                  <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+                                    <label class="form-check-label" for="inlineRadio3">3</label>
+                                  </div>
+
+                                 <div class="form-check form-switch">
+                                    <input class="form-check-input" type="checkbox" id="checked1" >
+                                    <label class="form-check-label" for="checked1">Mineral og'it </label>
+                                 </div>
+                                 <div class="form-check form-switch">
+                                    <input class="form-check-input" type="checkbox" id="checked2">
+                                    <label class="form-check-label" for="checked2">Zarakunanda uchun dori</label>
+                                 </div>
+                                 <div class="form-group">
+                                   <div class="form-check">
+                                     <input class="form-check-input" type="checkbox" id="gridCheck">
+                                     <label class="form-check-label" for="gridCheck">
+                                       QR code chiqarsinmi
+                                     </label>
+                                   </div>
+                                 </div>
+                                 <a href="./my-account.html"><button type="submit" class="btn btn-primary">To'lov qilish</button></a>
+                               </form>
+                        </div>
+                     </div>
+                     <div class="col-md-3">
+                        <h5>Ekiladigan Viloyatlar</h5>
+                        <div class="product-text">
+                           <ul>
+                              <li>Toshkent shahar</li>
+                              <li>Toshkent viloyat</li>
+                              <li>Jizzah viloyat</li>
+                              <li>Samarkand viloyat</li>
+                           </ul>
+                           <img width="100%" style="margin-top: 20px; margin-bottom: 10px;" src="{{tree.regionImage.url}}" alt="">
+                        </div>
+                        <h5>Umumiy summa: </h5>
+                        <h6 id="totalCost">95000</h6>
+                     </div>
+                  </div>
+                  <div class="row">
+                     <div class="col-md-12">
+                        <div class="products-tabs wf100 p80">
+                           <nav>
+                              <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                                 <a class="nav-item nav-link active" id="nav-one-tab" data-toggle="tab" href="#nav-one" role="tab" aria-controls="nav-one" aria-selected="true">Tavsifi</a>
+                                 <a class="nav-item nav-link" id="nav-two-tab" data-toggle="tab" href="#nav-two" role="tab" aria-controls="nav-two" aria-selected="true">Qo'shimcha malumotlar</a>
+                                 <a class="nav-item nav-link" id="nav-three-tab" data-toggle="tab" href="#nav-three" role="tab" aria-controls="nav-three"
+                                 aria-selected="false">Komentariya</a>
+                              </div>
+                           </nav>
+                           <div class="tab-content" id="nav-tabContent">
+                              <div class="tab-pane fade show active" id="nav-one" role="tabpanel" aria-labelledby="nav-one-tab">
+                                 <table class="table">
+                                    <tr>
+                                      <th rowspan="1">Yil bo'yi CO2 tozalaydi</th>
+                                      <td>{{tree.cleanCO2Year}} ❗ </td>
+                                    </tr>
+                                    <tr>
+                                      <th rowspan="1">Sutkasiga CO2 tozalashi</th>
+                                      <td> {{tree.cleanCO2Day}} </td>
+                                    </tr>
+                                    <tr>
+                                      <th rowspan="1">CO2 tozalash davri</th>
+                                      <td> {{tree.cleanCO2Period}} </td>
+                                    </tr>
+                                    <tr>
+                                      <th rowspan="1">O'rtacha hayot davomligi</th>
+                                      <td> {{tree.averageLifeTime}} </td>
+                                    </tr>
+                                    <tr>
+                                       <th>Balandligi</th>
+                                       <td>{{tree.height}}</td>
+                                    </tr>
+                                    <tr>
+                                       <th>Bargi o'lchami</th>
+                                       <td>{{tree.leaveSize}}</td>
+                                    </tr>
+                                    <tr>
+                                       <th>Diametri</th>
+                                       <td> {{tree.wide}}</td>
+                                    </tr>
+                                  </table>
+                               </div>
+                              <div class="tab-pane fade" id="nav-two" role="tabpanel" aria-labelledby="nav-two-tab">
+                                 <p>{{ tree.additionBio }}</p>
+                              </div>
+                              <div class="tab-pane fade" id="nav-three" role="tabpanel" aria-labelledby="nav-three-tab">
+                                 <ul class="comments">
+                                    <!--Comment Start-->
+                                    <li class="comment">
+                                       <div class="user-thumb"> <img src="images/u1.jpg" alt=""></div>
+                                       <div class="comment-txt">
+                                          <h6> Azizbek Holiqov </h6>
+                                          <p> Shaxsan men ushbu usullarning kombinatsiyasi eng samarali deb o'ylayman, ammo bugungi postda men WordPress-ning o'rnatilgan yopishqoq post xususiyatidan qanday foydalanish va uslublash haqida alohida to'xtalib o'taman va o'z tajribamga asoslangan holda undan eng yaxshi foydalanish holatini ta'kidlayman. </p>
+                                          <ul class="comment-time">
+                                             <li>Post: 09 Iyul, 2023 at 2:37 pm</li>
+                                             <li> <a href="#"><i class="fas fa-reply"></i> Javob qaytarish</a> </li>
+                                          </ul>
+                                       </div>
+                                       <ul class="children">
+                                          <!--Comment Start-->
+                                          <li class="comment">
+                                             <div class="user-thumb"> <img src="images/u2.jpg" alt=""></div>
+                                             <div class="comment-txt">
+                                                <h6> Baxtiyor Jamoldinov </h6>
+                                                <p> Shaxsan men ushbu usullarning kombinatsiyasi eng samarali deb o'ylayman, ammo bugungi postda men WordPress-ning o'rnatilgan yopishqoq post xususiyatidan qanday foydalanish va uslublash haqida alohida to'xtalib o'taman va o'z tajribamga asoslangan holda undan eng yaxshi foydalanish holatini ta'kidlayman./p>
+                                                <ul class="comment-time">
+                                                   <li>Posted: 09 Iyul, 2023 at 2:37 pm</li>
+                                                   <li> <a href="#"><i class="fas fa-reply"></i> Javob qaytarish</a> </li>
+                                                </ul>
+                                             </div>
+                                          </li>
+                                          <!--Comment End-->
+                                       </ul>
+                                    </li>
+                                    <!--Comment End--> 
+                                    <!--Comment Start-->
+                                    <li class="comment">
+                                       <div class="user-thumb"> <img src="images/u3.jpg" alt=""></div>
+                                       <div class="comment-txt">
+                                          <h6> Kamoldin Asadullayev </h6>
+                                          <p> Hozirgi kunda dunyoda sun'iy intellekt yordami hosil qilingan fotosuratlar ommalashib bormoqda. Quyida Toshkent shahrining sun'iy intellekt yordami yasalgan rasmlarini ko'rishingiz mumkin.</p>
+                                          <ul class="comment-time">
+                                             <li>Posted: 09 July, 2018 at 2:37 pm</li>
+                                             <li> <a href="#"><i class="fas fa-reply"></i> Javob qaytarish</a> </li>
+                                          </ul>
+                                       </div>
+                                    </li>
+                                    <!--Comment End-->
+                                 </ul>
+                                 <div class="wf100 comment-form">
+                                    <h4>Koment yozish</h4>
+                                    <p class="comment-notes"><span id="email-notes">Sizning elektron pochta manzilingiz nashr etilmaydi. Majburiy maydonlar belgilangan</span> Majburiy maydonlar belgilangan <span class="required">*</span></p>
+                                    <div class="comment-form-rating">
+                                       <label>Your rating</label>
+                                       <p class="stars"><span><a class="star-1" href="#">1</a><a class="star-2" href="#">2</a><a class="star-3" href="#">3</a><a class="star-4" href="#">4</a><a class="star-5" href="#">5</a></span></p>
+                                    </div>
+                                    <ul>
+                                       <li class="w3">
+                                          <input type="text" class="form-control" placeholder="Full Name">
+                                       </li>
+                                       <li class="w3">
+                                          <input type="text" class="form-control" placeholder="Email">
+                                       </li>
+                                       <li class="w3 np">
+                                          <input type="text" class="form-control" placeholder="Subject">
+                                       </li>
+                                       <li class="full">
+                                          <textarea class="form-control" placeholder="Write Comments"></textarea>
+                                       </li>
+                                       <li class="full">
+                                          <button class="post-btn">Post koment</button>
+                                       </li>
+                                    </ul>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <section class="online-shop wf100">
+               <div class="container">
+                  <div class="row">
+                     <div class="col-md-12">
+                        <h2>Aloqador daraxtlar</h2>
+                     </div>
+                  </div>
+                  <div class="row">
+                   <!--Pro Box Start-->
+                  <div class="col-lg-3 col-sm-6">
+                     <div class="product-box">
+                        <div class="pro-thumb"> <a href="#">Batafsil</a> 
+                           <img style="width: 100%; height: 380px;" src="images/tree/2.2.jpg" alt=""></div>
+                        <div class="pro-txt">
+                           <h6><a href="#">Eman pyramidal</a></h6>
+                           <p class="pro-price"><del>25.000</del> 29.000</p>
+                        </div>
+                     </div>
+                  </div>
+                  <!--Pro Box End--> 
+                  <!--Pro Box Start-->
+                  <div class="col-lg-3 col-sm-6">
+                     <div class="product-box">
+                        <div class="pro-thumb"> <a href="#">Batafsil</a> 
+                           <img style="width: 100%; height: 380px;" src="images/tree/3.2.jpg" alt=""></div>
+                        <div class="pro-txt">
+                           <h6><a href="#">Kashtan bargli eman</a></h6>
+                           <p class="pro-price">20.000</p>
+                        </div>
+                     </div>
+                  </div>
+                  <!--Pro Box End--> 
+                  <!--Pro Box Start-->
+                  <div class="col-lg-3 col-sm-6">
+                     <div class="product-box">
+                        <div class="pro-thumb"> <a href="#">Batafsil</a> 
+                           <img style="width: 100%; height: 380px;" src="images/tree/4.4.jpg" alt=""></div>
+                        <div class="pro-txt">
+                           <h6><a href="#">Ot kashtan zarang</a></h6>
+                           <p class="pro-price">15.000</p>
+                        </div>
+                     </div>
+                  </div>
+                  <!--Pro Box End--> 
+                  <!--Pro Box Start-->
+                  <div class="col-lg-3 col-sm-6">
+                     <div class="product-box">
+                        <div class="pro-thumb"> <a href="#">Batafsil</a> 
+                           <img style="width: 100%; height: 380px;" src="images/tree/5.2.jpg" alt=""></div>
+                        <div class="pro-txt">
+                           <h6><a href="#">Yapon saforasi</a></h6>
+                           <p class="pro-price">40.000</p>
+                        </div>
+                     </div>
+                  </div>
+
+                  </div>
+               </div>
+            </section>
+         </section>
+         <!--Blog End--> 
+      </div>
+{% endblock content %}

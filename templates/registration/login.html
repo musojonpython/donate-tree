@@ -1,0 +1,15 @@
+{%extends 'base.html'%}
+{%block content %}
+<div class="container">
+    <div class="row">
+        <div class="col-lg-6 col-lg-offset-3">
+            <h3 class="text-center">Login va parolni kiriting</h3>
+            <form method="post" > {% csrf_token%}
+                {{ form.as_p }}
+                <button type="submit"><a href="{% url 'login'%}"> Jo'natish </a></button>
+            </form>
+            <a href="{% url 'password_reset'%}">Parolni unitdingizmi? </a>
+        </div>
+    </div>
+</div>
+{% endblock content %}
